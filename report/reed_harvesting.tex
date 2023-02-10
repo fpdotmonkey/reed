@@ -1,0 +1,143 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt,american,german,british]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\usepackage{hyperref}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{babel}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{parskip}
+\usepackage{rotating}
+\usepackage{makecell}
+
+\title{Development of a Robotic Fleet for Agriculture }
+\date{\today}
+
+\author{
+	Fletcher Porter, me@fletcherporter.com
+	\and Gert Kauniste, gert.kauniste@aalto.fi
+	\and Oskari Hynninen, oskari.hynninen@aalto.fi
+	\and Yelin Hou, yelin.hou@aalto.fi
+}
+
+\newcommand{\reedtemp}[1] {
+	\textit{\textcolor{blue}{#1}}
+}
+
+\begin{document}
+
+\raggedright
+
+\maketitle
+
+\begin{abstract}
+\reedtemp{
+The abstract will state what problems we seek to solve, the high level of how
+we planned to solve them, and how successful it was.  All in a single
+paragraph.
+}
+\end{abstract}
+
+\section{Introduction}
+
+Under the present threat of the climate crisis, it is the important challenge
+of our time to develop new technologies to reduce our overall emissions of
+greenhouse gasses \cite{IPCC2022}.  One area where such improvements can be
+made is in the care of common reeds ({\it Phragmites australis}).  Reeds are a
+plant that grow in wetland biomes around the world.  They aren't typically
+cultivated for anything.  It's even quite often that they are burned to get
+them out of the way of human activity.  This is problematic both for that
+burning reeds produces greenhouse gasses and the ash left over from burning
+enters the wetland ecosystem, making water and soil more alkaline
+\cite{Sluis2013}.
+
+We propose that these wild reeds should be harvested and used as a resource for
+energy and raw materials.  Studies by Köbbing et al and van der Sluis et al
+have shown that, not only are these applications possible, but they may even be
+favorable \cite{Sluis2013}\cite{Koebbing12013}.  There are also environmental
+benefits in cutting down reeds in areas where they are an invasive species
+\cite{Tulbure2007}.  However, there are technical challenges to overcome for
+reed harvesting to become truly viable.
+
+Principally among these challenges is the inherent difficulty of wetland
+environments.  The ground is very soft, making driving tractors over it
+challenging.  Even if that were to be overcome, these ecosystems are quite
+sensitive, so uncareful driving would be to their detriment.  This can be
+mitigated by harvesting in the winter when the water is frozen, but care must
+still be taken \cite{Sluis2013}.
+
+To overcome this, we propose using many small, lightweight tractors so to
+minimize environmental disturbance while getting the reeds quickly.  Employing
+many people to drive these small tractors may be economically challenging, so
+we imagine them as (at least semi-) autonomous robots.  In one pass several
+robots cut down the reeds somewhat like a lawn mower, and in another, robots
+pick up the reeds that they harvested.  These robots should be coordinated by a
+UAV drone that watches them from above and human operator to provide
+high-level instructions.
+
+There's already been a lot of study into applying robotics in agriculture.
+Millard et al have proposed, but not implemented, a swarm robot system for
+harvesting cereal crops like wheat or rice \cite{Millard2019}.  Blender et al
+developed a swarm robot system where robots e.g. plant seeds as they traverse
+across a field and deployed a single-robot prototype system \cite{Blender2016}.
+
+Kurita et al deployed an autonomous combine harvester in a rice paddy, a
+notably wet environment \cite{Kurita2017}.  Rahman et al developed a means of
+plotting a robot trajectory through a field to minimize crop losses
+\cite{Rahman2019}.  Akbari et al developed techniques for aerial triangulation,
+localization, and mapping, including for agricultural application
+\cite{Akbari2021}.  Montoya-Cavero et al have developed a fruit-picking robot
+that uses computer vision to identify where to grasp and pull the fruits
+\cite{MontoyaCavero2022}.
+
+\section{Methods}
+
+\reedtemp{
+A description of the theoretical model of how our reed harvesting system will
+work.  It goes through all system components, what they do and why, and why
+we architect our system the way we do.
+}
+
+\section{Results}
+
+\reedtemp{
+The details of implementing our system.  What tools and facilities did we use,
+how did we test the system, did we have to deviate from the theoretical model
+and why.
+}
+
+\section{Discussion}
+
+\reedtemp{
+Did it work?  What improvements could be made for future work on this topic?
+Could implementation limitations be lifted to allow improvement, or maybe even
+an architectural decision was flawed.
+}
+
+\bibliography{reed}
+\bibliographystyle{ieeetr}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

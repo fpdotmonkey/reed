@@ -1,0 +1,9 @@
+[submodule "3rd/CuraEngine"]
+	path = 3rd/CuraEngine
+	url = git@github.com:Ultimaker/CuraEngine.git
+[submodule "3rd/libArcus"]
+	path = 3rd/libArcus
+	url = git@github.com:Ultimaker/libArcus.git
+[submodule "3rd/conan-ultimaker-index"]
+	path = 3rd/conan-ultimaker-index
+	url = git@github.com:Ultimaker/conan-ultimaker-index.git

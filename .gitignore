@@ -1,0 +1,11 @@
+/build*/
+
+# LaTeX
+*.bbl
+*.blg
+*.aux
+*.sav
+*.listing
+*.log
+*.out
+*.synctex.gz
